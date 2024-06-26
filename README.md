@@ -15,6 +15,9 @@ notepad run.py
 notepad data\forecasts.csv
 notepad requirements.txt
 **************************
+CREATE ACTUAL PRICE
+
+********
 INSTALL DEPENDENCIES
 ****************
 pip install -r requirements.txt
@@ -26,5 +29,6 @@ python run.py
 GET REQUEST IN ANOTHER BASE ENVIRONMENT
 ***************
 cd path\to\your\energy_dashboard
-curl -X POST -H "Content-Type: application/json" -d @test_data.json http://127.0.0.1:5000/statistics
+curl -X POST -H "Content-Type: application/json" -d @filter_data.json http://127.0.0.1:5000/filtered_data
+curl -X POST -H "Content-Type: application/json" -d @rmse_data.json http://127.0.0.1:5000/filtered_statistics
 ***************
