@@ -1,0 +1,4 @@
+{
+    "date_range": ["20240601", "20240602"],
+    "series": ["price_fcst", "actual_price"]
+}
