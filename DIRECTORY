@@ -1,0 +1,10 @@
+energy_dashboard/
+├── app/
+│   ├── __init__.py
+│   ├── routes.py
+│   └── utils.py
+├── data/
+│   └── team_name1_price_fcst.csv
+├── test_data.json
+├── run.py
+└── requirements.txt
