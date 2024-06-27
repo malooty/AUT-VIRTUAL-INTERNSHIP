@@ -18,7 +18,7 @@ notepad run.py
 notepad data\forecasts.csv
 notepad requirements.txt
 ***********************************
-*************JSON FILES*******
+*******JSON FILES*******
 ***********************************
 filter_data.json
 graph_data.json  ****dispaly actual timeseries*****
@@ -42,11 +42,13 @@ python run.py
 
 cd path\to\your\energy_dashboard
 curl -X POST -H "Content-Type: application/json" -d @filter_data.json http://127.0.0.1:5000/filtered_data
-
+***********************************
 curl -X POST -H "Content-Type: application/json" -d @rmse_data.json http://127.0.0.1:5000/filtered_statistics
 ***********************************
 *******TO DISPLAY GRAPH********
 ***********************************
 curl -X POST -H "Content-Type: application/json" -d @graph_data.json http://127.0.0.1:5000/graph --output graph.png
+***********************************
 curl -X POST -H "Content-Type: application/json" -d @rmse_graph_data.json http://127.0.0.1:5000/rmse_graph --output rmse_graph.png
+***********************************
 This will save the RMSE graph image as rmse_graph.png.
