@@ -91,6 +91,9 @@ def generate_graph():
         ax.set_ylabel('Price')
         ax.legend()
         ax.set_title('Price Forecast vs Actual Price')
+        # Rotate x-axis labels
+        plt.xticks(rotation=90)
+
         
         # Save plot to a BytesIO object
         img = BytesIO()
